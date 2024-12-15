@@ -1,25 +1,26 @@
 # Squid - OANDA Data Synchronization
 
-## Supported Instruments
-- Major Forex Pairs (EUR/USD, GBP/USD, USD/JPY, etc.)
-- Gold (XAU/USD)
-- SPX500_USD
-
-## Performance Optimizations
-- Increased chunk size to optimal 13.89 hours (5000 candles at S10)
-- Parallel processing with 8 workers
-- Reduced rate limit delay to 0.01 seconds
-- Batch processing for candles and database operations
-- Compression headers for API requests
-- Transaction batching for database operations
+## Latest Updates
+- Added prioritized instrument display
+- Improved status display with instrument types
+- Priority order: Metals > Forex > Bonds > Indices
 
 ## Features
-- Historical data download (up to 4 years)
-- Real-time synchronization
-- SQLite storage with optimized indexing
-- Live status display
+- Historical and real-time data synchronization
+- Priority-based data collection
+- Enhanced status display with instrument types
+- SQLite storage with transaction batching
+- Multi-threaded operation
 
-## Recent Updates
-- Added XAU_USD (Gold) tracking
-- Fixed database transaction handling
-- Improved error recovery
+## Status Display
+The live status display now shows:
+- Instrument priority levels
+- Real-time sync progress
+- Current prices and spreads
+- Operation status
+
+## Priorities
+1. Precious Metals (METAL-1): XAU_USD
+2. Forex Pairs (FOREX-2): Major currency pairs
+3. Bonds (BOND-3): Treasury instruments
+4. Indices (INDEX-4): Stock indices
