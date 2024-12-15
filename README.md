@@ -1,26 +1,38 @@
 # Squid - OANDA Data Synchronization
 
-## Latest Updates
-- Added prioritized instrument display
-- Improved status display with instrument types
-- Priority order: Metals > Forex > Bonds > Indices
+## Latest Status
+- Fully functional with historical data collection
+- Priority-based instrument ordering
+- Enhanced status display with types and progress
+- Stable database operations
 
 ## Features
-- Historical and real-time data synchronization
-- Priority-based data collection
-- Enhanced status display with instrument types
-- SQLite storage with transaction batching
-- Multi-threaded operation
+- Historical data download (up to 4 years)
+- Real-time synchronization
+- Priority ordering: Metals > Forex > Bonds > Indices
+- SQLite storage with transaction safety
+- Live status display with progress tracking
+
+## Instrument Types
+- METAL-1: XAU_USD
+- FOREX-2: Major currency pairs
+- BOND-3: Treasury instruments
+- INDEX-4: Stock indices
+
+## Performance
+- 20,000 candles per instrument
+- Parallel processing with 8 workers
+- Optimized chunk sizes
+- Transaction batching
 
 ## Status Display
-The live status display now shows:
-- Instrument priority levels
-- Real-time sync progress
-- Current prices and spreads
-- Operation status
+- Real-time progress tracking
+- Instrument type labeling
+- Price and spread monitoring
+- Download progress percentage
 
-## Priorities
-1. Precious Metals (METAL-1): XAU_USD
-2. Forex Pairs (FOREX-2): Major currency pairs
-3. Bonds (BOND-3): Treasury instruments
-4. Indices (INDEX-4): Stock indices
+## Recent Fixes
+- Improved database transaction handling
+- Fixed progress tracking
+- Enhanced error recovery
+- Better type handling for instruments

@@ -1,1 +1,1 @@
-# Updated sync_manager.py with new SyncStatus class
+# Complete sync manager with priority ordering and fixes
