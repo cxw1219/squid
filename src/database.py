@@ -1,2 +1,1 @@
-# Enhanced database manager
-...
+# Complete database.py content

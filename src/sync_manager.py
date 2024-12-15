@@ -1,2 +1,1 @@
-# Updated sync manager with historical data and SPX500
-...
+# Complete sync_manager.py content
