@@ -1,1 +1,1 @@
-# Updated sync_manager.py content
+# Updated content with XAU_USD
