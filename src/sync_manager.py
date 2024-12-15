@@ -1,1 +1,1 @@
-# Complete sync_manager.py content
+# Updated sync_manager.py content
